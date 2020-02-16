@@ -1,0 +1,45 @@
+﻿@model _2106PaymentModule.Models.WalletTransaction
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>WalletTransaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.walletId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.walletId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.transactionType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.transactionType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.transactionAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.transactionAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.transactionDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.transactionDate)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="walletTransactionId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

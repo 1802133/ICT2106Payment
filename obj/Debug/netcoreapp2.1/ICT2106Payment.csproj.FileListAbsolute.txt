@@ -30,3 +30,45 @@ C:\Users\kx\Downloads\Telegram Desktop\2106Payment\obj\Debug\netcoreapp2.1\ICT21
 C:\Users\kx\Downloads\Telegram Desktop\2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.dll
 C:\Users\kx\Downloads\Telegram Desktop\2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.pdb
 C:\Users\kx\Downloads\Telegram Desktop\2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.csproj.CopyComplete
+D:\SIT\Github\ICT2106Payment\bin\Debug\netcoreapp2.1\ICT2106Payment.deps.json
+D:\SIT\Github\ICT2106Payment\bin\Debug\netcoreapp2.1\ICT2106Payment.runtimeconfig.json
+D:\SIT\Github\ICT2106Payment\bin\Debug\netcoreapp2.1\ICT2106Payment.runtimeconfig.dev.json
+D:\SIT\Github\ICT2106Payment\bin\Debug\netcoreapp2.1\ICT2106Payment.dll
+D:\SIT\Github\ICT2106Payment\bin\Debug\netcoreapp2.1\ICT2106Payment.pdb
+D:\SIT\Github\ICT2106Payment\bin\Debug\netcoreapp2.1\ICT2106Payment.Views.dll
+D:\SIT\Github\ICT2106Payment\bin\Debug\netcoreapp2.1\ICT2106Payment.Views.pdb
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.csprojAssemblyReference.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.csproj.CoreCompileInputs.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.RazorAssemblyInfo.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.RazorAssemblyInfo.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.AssemblyInfoInputs.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.AssemblyInfo.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.TagHelpers.input.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.TagHelpers.output.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.RazorCoreGenerate.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.RazorTargetAssemblyInfo.cache
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.RazorTargetAssemblyInfo.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.Views.pdb
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.dll
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.pdb
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\ICT2106Payment.csproj.CopyComplete
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\WalletTransactions\Create.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\WalletTransactions\Delete.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\WalletTransactions\Details.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\WalletTransactions\Edit.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\WalletTransactions\Index.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Wallets\Create.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Wallets\Delete.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Wallets\Details.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Wallets\Edit.g.cshtml.cs
+D:\SIT\Github\ICT2106Payment\obj\Debug\netcoreapp2.1\Razor\Views\Wallets\Index.g.cshtml.cs
