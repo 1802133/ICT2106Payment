@@ -1,0 +1,48 @@
+﻿@model _2106PaymentModule.Models.Payment
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Payment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.userId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.userId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.paymentType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.paymentType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.paymentDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.paymentDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.totalAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.totalAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.bookingId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.bookingId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.paymentId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

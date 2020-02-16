@@ -12,12 +12,12 @@ namespace ICT2106Payment.Controllers
 {
     public class WalletsController : Controller
     {
-        private WalletGateway walletGateway = new WalletGateway();
+        internal WalletGateway wdb;
 
         // GET: Wallets
         public ActionResult Index()
         {
-            return View(walletGateway.SelectByAll());
+            return View(wdb.SelectAll());
         }
 
         // GET: Wallets/Details/5
@@ -28,7 +28,7 @@ namespace ICT2106Payment.Controllers
                 return NotFound();
             }
 
-            Wallet wallet = walletGateway.SelectById(id);
+            Wallet wallet = wdb.SelectById(id);
             if (wallet == null)
             {
                 return NotFound();
@@ -40,7 +40,7 @@ namespace ICT2106Payment.Controllers
         // GET: Wallets/Create
         public IActionResult Create(string id)
         {
-            var wallet = walletGateway.SelectById(id);
+            var wallet = wdb.SelectById(id);
             return View();
         }
 
@@ -53,8 +53,8 @@ namespace ICT2106Payment.Controllers
         {
             if (ModelState.IsValid)
             {
-                walletGateway.Insert(wallet);
-                walletGateway.Save();
+                wdb.Insert(wallet);
+                wdb.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(wallet);
@@ -68,7 +68,7 @@ namespace ICT2106Payment.Controllers
                 return NotFound();
             }
 
-            Wallet wallet = walletGateway.SelectById(id);
+            Wallet wallet = wdb.SelectById(id);
             if (wallet == null)
             {
                 return NotFound();
@@ -92,8 +92,8 @@ namespace ICT2106Payment.Controllers
             {
                 try
                 {
-                    walletGateway.Update(wallet);
-                    walletGateway.Save();
+                    wdb.Update(wallet);
+                    wdb.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -114,7 +114,7 @@ namespace ICT2106Payment.Controllers
 
         private bool WalletExists(string id)
         {
-            return (walletGateway.SelectById(id) != null);
+            return (wdb.SelectById(id) != null);
         }
     }
 }

@@ -12,13 +12,18 @@ namespace ICT2106Payment.Controllers
 {
     public class WalletTransactionsController : Controller
     {
-        private WalletTransactionGateway walletTransactionGateway = new WalletTransactionGateway();
-        private WalletGateway walletGateway = new WalletGateway();
-
+        internal WalletTransactionGateway wtdb;
+        internal WalletGateway wdb;
+        
+        public WalletTransactionsController(ICT2106PaymentContext db)
+        {
+            this.wtdb = new WalletTransactionGateway(db);
+            this.wdb = new WalletGateway(db);
+        }
         // GET: WalletTransactions
         public ActionResult Index()
         {
-            return View(walletTransactionGateway.SelectByAll());
+            return View(wtdb.SelectAll());
         }
 
         // GET: WalletTransactions/Details/5
@@ -29,7 +34,7 @@ namespace ICT2106Payment.Controllers
                 return NotFound();
             }
 
-            Wallet walletTrans = walletTransactionGateway.SelectById(id);
+            WalletTransaction walletTrans = wtdb.SelectById(id);
 
             if (walletTrans == null)
             {
@@ -42,8 +47,9 @@ namespace ICT2106Payment.Controllers
         // GET: WalletTransactions/Create
         public IActionResult Create(string id)
         {
-            var wallet = walletTransactionGateway.SelectById(id);
-            return View(wallet);
+            WalletTransaction walletTransaction = new WalletTransaction();
+            walletTransaction.walletId = id;
+            return View(walletTransaction);
         }
 
         // POST: WalletTransactions/Create
@@ -55,8 +61,20 @@ namespace ICT2106Payment.Controllers
         {
             if (ModelState.IsValid)
             {
-                walletTransactionGateway.Insert(walletTransaction);
-                walletTransactionGateway.Save();
+                Wallet wallet = wdb.SelectById(walletTransaction.walletId);
+                if (walletTransaction.transactionType == "TopUp")
+                {
+                    wallet.walletAmount += walletTransaction.transactionAmount;
+
+                }
+                else if (walletTransaction.transactionType == "Deduct")
+                {
+                    wallet.walletAmount -= walletTransaction.transactionAmount;
+                }
+                wdb.Update(wallet);
+                wdb.Save();
+                wtdb.Insert(walletTransaction);
+                wtdb.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(walletTransaction);
@@ -70,7 +88,7 @@ namespace ICT2106Payment.Controllers
                 return NotFound();
             }
 
-            Wallet walletTrans = walletTransactionGateway.SelectById(id);
+            WalletTransaction walletTrans = wtdb.SelectById(id);
             if (walletTrans == null)
             {
                 return NotFound();
@@ -92,10 +110,11 @@ namespace ICT2106Payment.Controllers
 
             if (ModelState.IsValid)
             {
+              
                 try
                 {
-                    walletTransactionGateway.Update(walletTransaction);
-                    walletTransactionGateway.Save();
+                    wtdb.Update(walletTransaction);
+                    wtdb.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -115,7 +134,7 @@ namespace ICT2106Payment.Controllers
 
         private bool WalletTransactionExists(string id)
         {
-            return (walletTransactionGateway.SelectById(id) !=null);
+            return (wtdb.SelectById(id) !=null);
         }
     }
 }

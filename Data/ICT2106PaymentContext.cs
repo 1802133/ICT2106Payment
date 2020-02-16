@@ -7,13 +7,10 @@ using _2106PaymentModule.Models;
 
 namespace ICT2106Payment.Models
 {
-    public class WalletContext : DbContext
+    public class ICT2106PaymentContext : DbContext
     {
-        public WalletContext()
-        {
-        }
 
-        public WalletContext (DbContextOptions<WalletContext> options)
+        public ICT2106PaymentContext (DbContextOptions<ICT2106PaymentContext> options)
             : base(options)
         {
         }
@@ -21,5 +18,7 @@ namespace ICT2106Payment.Models
         public DbSet<_2106PaymentModule.Models.WalletTransaction> WalletTransaction { get; set; }
 
         public DbSet<_2106PaymentModule.Models.Wallet> Wallet { get; set; }
+
+        public DbSet<_2106PaymentModule.Models.Payment> Payment { get; set; }
     }
 }
