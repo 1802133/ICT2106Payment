@@ -36,8 +36,8 @@ namespace ICT2106Master
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<WalletContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("WalletContext")));
+            services.AddDbContext<ICT2106PaymentContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ICT2106PaymentContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
