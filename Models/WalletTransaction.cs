@@ -13,13 +13,5 @@ namespace _2106PaymentModule.Models
         public string transactionType { get; set; }
         public decimal transactionAmount { get; set; }
         public DateTime transactionDate { get; set; }
-
-        private void TopUpWalletAmount(string walletId,decimal transactionAmount) {
-            
-        }
-        private void DeductWalletAmount(string walletId, decimal transactionAmount) {
-
-        }
-
     }
 }

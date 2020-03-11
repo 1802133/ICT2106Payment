@@ -14,6 +14,10 @@ namespace ICT2106Payment.Controllers
     {
         internal WalletGateway wdb;
 
+        public WalletsController(ICT2106PaymentContext context)
+        {
+            this.wdb = new WalletGateway(context);
+        }
         // GET: Wallets
         public ActionResult Index()
         {
